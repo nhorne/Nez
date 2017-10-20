@@ -374,7 +374,7 @@ namespace Nez
 		{
 			_rotation = radians;
 			if( parent != null )
-				localRotation = parent.rotation + radians;
+				localRotation = radians - parent.rotation;
 			else
 				localRotation = radians;
 			
